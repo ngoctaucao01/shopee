@@ -188,6 +188,7 @@ html {
   list-style: none;
   display: none;
   animation: fadeIn ease-in 0.2s;
+  z-index: 1;
 }
 
 .select-input__link {
