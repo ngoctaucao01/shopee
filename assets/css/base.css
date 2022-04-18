@@ -1,6 +1,7 @@
 :root {
   --primary-color: hsl(10, 85%, 55%);
   --primary-color-second: hsl(10, 69%, 65%);
+  --primary-hover: hsl(10, 85%, 50%);
   --primary-color-alt: hsl(10, 57%, 53%);
   --secondary-color: hsl(10, 89%, 40%);
   --primary-color-lighter: hsl(10, 92%, 85%);
@@ -201,4 +202,39 @@ html {
 
 .select-input__link:hover {
   color: var(--primary-color);
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.pagination-item {
+  margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  background-color: var(--primary-hover);
+}
+
+.pagination-item__link {
+  --height: 30px;
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #939393;
+  min-width: 40px;
+  height: var(--height);
+  line-height: var(--height);
+  text-align: center;
+  border-radius: 2px;
 }
